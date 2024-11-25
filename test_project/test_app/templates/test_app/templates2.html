@@ -1,0 +1,13 @@
+{% extends "main.html" %}
+
+{% block content %}
+    <p>This is my frist website.</p>  
+
+    <h1>{{ project.title }}</h1>
+    <span>{{ project.Description }}</span>
+
+    {% for x in tags %}
+        <span style="border: 1px solid grey">{{x}}</span>
+    {% endfor %}
+    
+{% endblock %}
